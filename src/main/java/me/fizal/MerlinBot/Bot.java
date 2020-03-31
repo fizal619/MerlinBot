@@ -24,7 +24,7 @@ public class Bot extends ListenerAdapter {
     }
     new JDABuilder(API_KEY)
     .addEventListeners(new Bot())
-    .setActivity(Activity.playing("Type .merlin"))
+    .setActivity(Activity.playing("Type merlin"))
     .build();
 
     return this;
