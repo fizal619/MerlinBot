@@ -21,6 +21,10 @@ This project consists of 2 parts:
 
 In order for repl.it to keep our bot alive and not kill it when we close replit. There's a monitor on https://uptimerobot.com/ to ping this repl.it's web url (https://MerlinBot--fizal619.repl.co) every 23 minutes.
 
+## Repl.it is complaining about not finding packages. What do?
+
+In a case like that, the bot probably needs to grab packages again from the internet. But repl.it needs to do this. The simplest way to make repl.it do this is to edit the `<version>` entry in the `pom.xml` file. This will make repl.it re-resolve dependencies again and allow the bot to start. 
+
 ## Resources: 
 
 - [JDA (Java Discord API)](https://github.com/DV8FromTheWorld/JDA)

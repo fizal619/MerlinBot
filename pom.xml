@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.fizal</groupId>
   <artifactId>MerlinBot</artifactId>
-  <version>0.2</version>
+  <version>1.0</version>
   <repositories>
     <repository>
       <id>central</id>
