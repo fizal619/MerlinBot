@@ -8,7 +8,7 @@ public class WebController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Greetings from Spring Boot!";
+		return "HOOOOOOO SKUNT!";
 	}
 
 }
