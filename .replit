@@ -1,2 +1,2 @@
 language = "java10"
-run = "mvn  spring-boot:run"
+run = "mvn spring-boot:run"

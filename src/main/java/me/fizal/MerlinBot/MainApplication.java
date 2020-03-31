@@ -8,10 +8,19 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class MainApplication {
 
-    public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(MainApplication.class);
-        app.setDefaultProperties(Collections.singletonMap("server.port", "8080"));
-        app.run(args);
+  static Bot botInstance;
+
+  public static void main(String[] args) {
+
+    try {
+      botInstance = new Bot().main();
+    } catch (Exception e) {
+      System.out.println(e.getMessage());
     }
+
+    SpringApplication app = new SpringApplication(MainApplication.class);
+    app.setDefaultProperties(Collections.singletonMap("server.port", "8080"));
+    app.run(args);
+  }
 
 }
