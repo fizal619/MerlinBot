@@ -8,8 +8,6 @@ import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpExchange;
 
-import me.fizal.MerlinBot.Bot;
-
 public class Main {
 
   static Bot botInstance;
@@ -35,7 +33,7 @@ public class Main {
 class MyController implements HttpHandler {
     public void handle(HttpExchange t) throws IOException {
         InputStream is = t.getRequestBody();
-        String response = "<h1>HOOOO SKUNT BAI!</h1>";
+        String response = "<h1 style='font-family: sans-serif;'>HOOOO SKUNT BAI!</h1>";
         t.sendResponseHeaders(200, response.length());
         OutputStream os = t.getResponseBody();
         os.write(response.getBytes());

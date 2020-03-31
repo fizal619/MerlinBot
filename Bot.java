@@ -1,5 +1,3 @@
-package me.fizal.MerlinBot;
-
 import javax.security.auth.login.LoginException;
 
 import io.github.cdimascio.dotenv.Dotenv;
